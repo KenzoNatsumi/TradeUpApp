@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">FinalProject</string>
+    <string name="default_web_client_id">118639674418-rj3tgg4hmoaam1pvqcflh4nr4g1peac8.apps.googleusercontent.com</string>
+
+    <string-array name="categories_array">
+        <item>Điện tử</item>
+        <item>Thời trang</item>
+        <item>Gia dụng</item>
+        <item>Sách</item>
+        <item>Khác</item>
+    </string-array>
+
+    <string-array name="status_array">
+        <item>Available</item>
+        <item>Paused</item>
+    </string-array>
+
+</resources>
