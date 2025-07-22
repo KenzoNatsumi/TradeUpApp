@@ -51,4 +51,7 @@ dependencies {
     implementation(libs.cloudinary)
     //Location
     implementation (libs.play.services.location)
+    implementation(libs.play.services.maps)
+    //Emoji
+    implementation(libs.emoji)
 }

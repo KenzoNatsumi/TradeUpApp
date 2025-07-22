@@ -4,7 +4,7 @@
 
     <meta-data
         android:name="cloudinary_url"
-        android:value="cloudinary://389738897636243:xVbzsqrpkJ7YHMQtQuiH8HP-3us@dl106kyha" />
+        android:value="cloudinary://389738897636243:xVbzsqrpkJ7YHMQtQuiH8HP-3us@dl106kyha" />>
 
     <uses-permission android:name="android.permission.INTERNET"/>
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
@@ -41,5 +41,10 @@
         <activity android:name=".PreviewItemActivity" />
         <activity android:name=".EditListingActivity" />
         <activity android:name=".MyListingActivity" />
+        <activity android:name=".ChatDetailActivity"/>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="YOUR_API_KEY_HERE"/>
     </application>
 </manifest>

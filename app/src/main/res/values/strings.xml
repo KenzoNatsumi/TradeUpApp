@@ -15,4 +15,17 @@
         <item>Paused</item>
     </string-array>
 
+    <string-array name="sort_options_array">
+        <item>Liên quan</item>
+        <item>Mới nhất</item>
+        <item>Giá tăng dần</item>
+        <item>Giá giảm dần</item>
+    </string-array>
+
+    <string-array name="condition_array">
+        <item>Tất cả</item>
+        <item>Mới</item>
+        <item>Đã sử dụng</item>
+    </string-array>
+
 </resources>

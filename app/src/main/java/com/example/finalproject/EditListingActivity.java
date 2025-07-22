@@ -106,7 +106,10 @@ public class EditListingActivity extends AppCompatActivity {
                     if (doc.exists()) {
                         edtTitle.setText(doc.getString("title"));
                         edtDescription.setText(doc.getString("description"));
-                        edtPrice.setText(doc.getString("price"));
+                        Double price = doc.getDouble("price");
+                        if (price != null) {
+                            edtPrice.setText(String.valueOf(price));
+                        }
 
                         Long qty = doc.getLong("quantity");
                         if (qty != null) {
@@ -155,7 +158,8 @@ public class EditListingActivity extends AppCompatActivity {
     private void updateListing() {
         String title = edtTitle.getText().toString().trim();
         String desc = edtDescription.getText().toString().trim();
-        String price = edtPrice.getText().toString().trim();
+        String priceStr = edtPrice.getText().toString().trim();
+        double price;
         String category = spinnerCategory.getSelectedItem().toString();
 
         try {
@@ -164,8 +168,10 @@ public class EditListingActivity extends AppCompatActivity {
             quantity = 1;
         }
 
-        if (title.isEmpty() || desc.isEmpty() || price.isEmpty()) {
-            Toast.makeText(this, "Vui lòng điền đầy đủ thông tin", Toast.LENGTH_SHORT).show();
+        try {
+            price = Double.parseDouble(priceStr);
+        } catch (NumberFormatException e) {
+            Toast.makeText(this, "Giá không hợp lệ", Toast.LENGTH_SHORT).show();
             return;
         }
 

@@ -10,6 +10,8 @@ constraintlayout = "2.2.1"
 firebase-auth = "23.2.1"
 google-auth = "21.3.0"
 play_services_location = "21.3.0"
+play-services-maps = "18.1.0"
+emoji = "0.7.0"
 
 [libraries]
 junit = { group = "junit", name = "junit", version.ref = "junit" }
@@ -25,10 +27,13 @@ firebase-firestore = { group = "com.google.firebase", name = "firebase-firestore
 #Google Service
 google-auth = { group = "com.google.android.gms", name = "play-services-auth", version.ref = "google-auth" }
 play-services-location = { group = "com.google.android.gms", name = "play-services-location", version.ref = "play_services_location" }
+play-services-maps = { group = "com.google.android.gms", name = "play-services-maps", version.ref = "play_services_maps" }
 #Image
 glide = { group = "com.github.bumptech.glide", name = "glide", version = "4.16.0" }
 #Cloudinary
 cloudinary = { group = "com.cloudinary", name = "cloudinary-android", version = "2.3.1" }
+#Emoji
+emoji = { group = "com.vanniktech", name = "emoji-google", version.ref = "emoji" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
